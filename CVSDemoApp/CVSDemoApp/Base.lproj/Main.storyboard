@@ -29,32 +29,18 @@
                                     <rect key="frame" x="0.0" y="0.0" width="383" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="guB-d2-hNl">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="folder" catalog="system" id="guB-d2-hNl">
                                             <rect key="frame" x="20" y="18" width="64" height="64"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="64" id="NHi-2q-AQd"/>
-                                                <constraint firstAttribute="width" constant="64" id="uhG-H6-tPF"/>
-                                            </constraints>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bobby" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngn-NM-tZ2">
-                                            <rect key="frame" x="92" y="25.5" width="271" height="50"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="302" id="2no-v3-3c1"/>
-                                                <constraint firstAttribute="height" constant="50" id="ghI-UU-BHF"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bobby" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ngn-NM-tZ2">
+                                            <rect key="frame" x="92" y="26" width="271" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="guB-d2-hNl" secondAttribute="bottom" constant="16.5" id="OHb-bA-HUV"/>
-                                        <constraint firstItem="guB-d2-hNl" firstAttribute="top" secondItem="msl-F3-42d" secondAttribute="top" constant="17" id="gbr-Mh-pRc"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ngn-NM-tZ2" secondAttribute="trailing" constant="20" symbolic="YES" id="ghx-yW-mTJ"/>
-                                        <constraint firstItem="guB-d2-hNl" firstAttribute="leading" secondItem="msl-F3-42d" secondAttribute="leading" constant="20" symbolic="YES" id="knK-VJ-X2K"/>
-                                        <constraint firstItem="ngn-NM-tZ2" firstAttribute="leading" secondItem="guB-d2-hNl" secondAttribute="trailing" constant="8" id="smk-dw-dye"/>
-                                        <constraint firstItem="ngn-NM-tZ2" firstAttribute="centerY" secondItem="guB-d2-hNl" secondAttribute="centerY" id="xXp-Oe-hFn"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="theImageView" destination="guB-d2-hNl" id="tDQ-YM-qGJ"/>
@@ -112,7 +98,7 @@
                                     </label>
                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-J9-F7y">
                                         <rect key="frame" x="20" y="344" width="373" height="440"/>
-                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <wkWebViewConfiguration key="configuration">
                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                             <wkPreferences key="preferences"/>
